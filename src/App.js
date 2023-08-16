@@ -1,6 +1,6 @@
+import './styles/estilosGlobais.scss'
+import PaginaInicial from "./pages/PaginaInicial";
 
 export default function App() {
-  return (
-    <h1>Final Space</h1>
-  );
+  return <PaginaInicial />
 }
