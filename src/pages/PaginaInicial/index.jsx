@@ -4,23 +4,24 @@ import Galeria from "../../components/Galeria";
 import Menu from "../../components/Menu";
 import Populares from "../../components/Populares";
 import Rodape from "../../components/Rodape";
-import styles from "./PaginaInicial.module.scss"
+import styles from "./PaginaInicial.module.scss";
 
 export default function PaginaInicial() {
-    return (
-        <>
-            <Cabecalho />
-            <main>
-                <section className={styles.principal}>
-                    <Menu />
-                    <Banner />
-                </section>
-            </main>
-            <div className={styles.galeria}>
-                <Galeria />
-                <Populares />
-            </div>
-            <Rodape />
-        </>
-    )
+  return (
+    <>
+      <Cabecalho />
+      <main>
+        <section className={styles.principal}>
+          <Menu />
+          <Banner />
+        </section>
+        <div className={styles.galeria}>
+          <Galeria />
+          <Populares />
+        </div>
+      </main>
+
+      <Rodape />
+    </>
+  );
 }
